@@ -20,7 +20,7 @@ function App() {
 
   async function getTokenBalance() {
     const config = {
-      apiKey: 'gFqQkQrgzlHNhIXDR9F6Yc-8zbT3FQVd',
+      apiKey: '<-- COPY-PASTE YOUR ALCHEMY API KEY HERE -->',
       network: Network.ETH_MAINNET,
     };
 
@@ -50,7 +50,7 @@ function App() {
           flexDirection={'column'}
         >
           <Heading mb={0} fontSize={36}>
-            ERC-20 Token Balance Checker
+            ERC-20 Token Indexer
           </Heading>
           <Text>
             Plug in an address and this website will return all of its ERC-20
@@ -64,7 +64,9 @@ function App() {
         alignItems="center"
         justifyContent={'center'}
       >
-        <Heading mt={42}>Holder Address to Check:</Heading>
+        <Heading mt={42}>
+          Get all the ERC-20 token balances of this address:
+        </Heading>
         <Input
           onChange={(e) => setUserAddress(e.target.value)}
           color="black"
@@ -107,7 +109,7 @@ function App() {
             })}
           </SimpleGrid>
         ) : (
-          'Please make a query.'
+          'Please make a query! This may take a few seconds...'
         )}
       </Flex>
     </Box>
