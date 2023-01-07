@@ -50,7 +50,7 @@ function App() {
           flexDirection={'column'}
         >
           <Heading mb={0} fontSize={36}>
-            NFT Indexer
+            NFT Indexer 🖼
           </Heading>
           <Text>
             Plug in an address and this website will return all of its NFTs!
