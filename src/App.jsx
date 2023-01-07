@@ -53,8 +53,7 @@ function App() {
             NFT Indexer
           </Heading>
           <Text>
-            Plug in an address and this website will return all of its ERC-721
-            token balances!
+            Plug in an address and this website will return all of its NFTs!
           </Text>
         </Flex>
       </Center>
@@ -78,7 +77,7 @@ function App() {
           Fetch NFTs
         </Button>
 
-        <Heading my={36}>ERC-721 token balances:</Heading>
+        <Heading my={36}>Here are your NFTs:</Heading>
 
         {hasQueried ? (
           <SimpleGrid w={'90vw'} columns={4} spacing={24}>
@@ -100,7 +99,7 @@ function App() {
             })}
           </SimpleGrid>
         ) : (
-          'Please make a query! This may take a few seconds...'
+          'Please make a query! The query may take a few seconds...'
         )}
       </Flex>
     </Box>
