@@ -21,4 +21,5 @@ We purposefully built this out to be a skeleton version of what can be the next 
 6. The images and grid display could look better... anything you can do about that?
 7. There are ways to make this app faster... can you implement some of them? How can the query be made _even_ quicker?
 8. Can you add ENS support for inputs?
-9. Completely open-ended!! Use this as the base for your next hackathon project, dream company or personal expedition :)
+9. The code has no commenting... bruh! Clear documentation is a clear path for other developers to understand and build on your code... think you can add clear commenting?
+10. Completely open-ended!! Use this as the base for your next hackathon project, dream company or personal expedition :)
