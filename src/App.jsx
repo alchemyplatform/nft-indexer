@@ -91,9 +91,18 @@ function App() {
                   key={e.id}
                 >
                   <Box>
-                    <b>Name:</b> {tokenDataObjects[i].title}&nbsp;
+                    <b>Name:</b>{' '}
+                    {tokenDataObjects[i].title?.length === 0
+                      ? 'No Name'
+                      : tokenDataObjects[i].title}
                   </Box>
-                  <Image src={tokenDataObjects[i].rawMetadata.image} />
+                  <Image
+                    src={
+                      tokenDataObjects[i]?.rawMetadata?.image ??
+                      'https://via.placeholder.com/200'
+                    }
+                    alt={'Image'}
+                  />
                 </Flex>
               );
             })}
